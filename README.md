@@ -132,10 +132,6 @@ Folder: `VGG16 Image Classification/`
 - **Model:** VGG16 (ImageNet pre-trained)
 - **Key Skills:** Transfer learning, fine-tuning, image augmentation
 - **Output:** Production-ready vehicle classifier
-- **📥 Dataset Download:**
-  ```bash
-  kaggle datasets download -d [vehicle-dataset-id]
-  ```
 - **📖 Documentation:** See `VGG16 Image Classification/README.md`
 
 ---
@@ -147,10 +143,6 @@ Folder: `Image Preprocessing Trash Classification/`
 - **Model:** Custom CNN Architecture
 - **Key Skills:** Image preprocessing, data augmentation, CNN training
 - **Output:** Multi-class waste type classifier
-- **📥 Dataset Download:**
-  ```bash
-  kaggle datasets download -d asdasdasasdas/garbage-classification
-  ```
 - **📖 Documentation:** See `Image Preprocessing Trash Classification/README.md`
 
 ---
@@ -177,10 +169,6 @@ Folder: `CNN Geometric Shapes/`
   - ✅ Dropout regularization
   - ✅ Early stopping mechanism
   - ✅ Complete ML pipeline
-- **📥 Dataset Download:**
-  ```bash
-  kaggle datasets download -d smeschke/four-shapes
-  ```
 - **📖 Documentation:** See `CNN Geometric Shapes/README.md`
 
 ---
@@ -226,19 +214,6 @@ pip install tensorflow keras
 ```bash
 pip install pillow opencv-python
 ```
-
-## 📊 Dataset Download Links & Commands
-
-| Project | Dataset | Source | Command |
-|---------|---------|--------|---------|
-| Linear Regression & Classification | USA Housing, Titanic | Google Colab Built-in | `pd.read_csv('USA_Housing.csv')` |
-| Clustering | Height & Weight | Local | Check notebook |
-| VGG16 | Vehicle Classification | Kaggle | `kaggle datasets download -d [id]` |
-| Image Preprocessing | Trash Classification | [Garbage Classification](https://www.kaggle.com/datasets/asdasdasasdas/garbage-classification) | `kaggle datasets download -d asdasdasasdas/garbage-classification` |
-| CNN Shapes | Geometric Shapes | [Four Shapes](https://www.kaggle.com/datasets/smeschke/four-shapes) | `kaggle datasets download -d smeschke/four-shapes` |
-| EDA | COVID-19 Synthetic | Local | Check notebook |
-
----
 
 ## 🚀 Running the Notebooks
 
