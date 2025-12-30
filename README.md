@@ -227,59 +227,6 @@ pip install tensorflow keras
 pip install pillow opencv-python
 ```
 
-**Dataset Management:**
-```bash
-pip install kaggle openpyxl
-```
-
----
-
-## 📥 Kaggle API Setup for Dataset Downloads
-
-To download datasets from Kaggle, follow these steps:
-
-### 1. Install Kaggle CLI
-```bash
-pip install kaggle
-```
-
-### 2. Configure API Key
-
-**Step 1:** Login to [Kaggle.com](https://www.kaggle.com)
-
-**Step 2:** Go to Settings → Account
-
-**Step 3:** Scroll down and click "Create New API Token"
-- This will download the `kaggle.json` file
-
-**Step 4:** Move the `kaggle.json` file to the correct location
-
-**Linux/Mac:**
-```bash
-mkdir -p ~/.kaggle
-cp ~/Downloads/kaggle.json ~/.kaggle/
-chmod 600 ~/.kaggle/kaggle.json
-```
-
-**Windows (PowerShell):**
-```powershell
-mkdir "$env:USERPROFILE\.kaggle"
-Copy-Item "$env:USERPROFILE\Downloads\kaggle.json" "$env:USERPROFILE\.kaggle\"
-```
-
-**Windows (Command Prompt):**
-```cmd
-mkdir "%USERPROFILE%\.kaggle"
-copy "%USERPROFILE%\Downloads\kaggle.json" "%USERPROFILE%\.kaggle\"
-```
-
-### 3. Verify Installation
-```bash
-kaggle auth -l
-```
-
----
-
 ## 📊 Dataset Download Links & Commands
 
 | Project | Dataset | Source | Command |
@@ -418,53 +365,6 @@ Machine Learning/
 
 ---
 
----
-
-## ⚙️ Troubleshooting
-
-### Problem: ModuleNotFoundError
-**Solution:** Install the missing package
-```bash
-pip install [nama_package]
-```
-
-### Problem: Dataset tidak ditemukan
-**Solution:** Make sure the dataset is downloaded and placed in the correct folder as per the notebook instructions
-
-### Problem: Kaggle API Error
-**Solution:** 
-1. Check that `kaggle.json` is in the correct location
-2. Verify credentials: `kaggle auth -l`
-3. Update Kaggle CLI: `pip install --upgrade kaggle`
-
-### Problem: Out of Memory during training
-**Solution:** 
-- Reduce batch size
-- Reduce number of epochs
-- Use Google Colab with GPU
-
-### Problem: Jupyter Kernel not working
-**Solution:**
-```bash
-# Reinstall kernel
-python -m ipykernel install --user
-
-# Or use VS Code with Jupyter extension
-```
-
-### Problem: GPU not detected (TensorFlow)
-**Solution:**
-```bash
-# Check GPU
-import tensorflow as tf
-print(tf.config.list_physical_devices('GPU'))
-
-# Install GPU support
-pip install tensorflow[and-cuda]
-```
-
----
-
 ## 📚 Learning Path & Progression
 
 ### Phase 1: Foundations
@@ -489,56 +389,9 @@ pip install tensorflow[and-cuda]
 
 ---
 
-## 📚 References & Resources
-
-### Official Documentation
-- [Scikit-learn](https://scikit-learn.org/)
-- [TensorFlow/Keras](https://www.tensorflow.org/)
-- [Pandas](https://pandas.pydata.org/)
-- [Matplotlib](https://matplotlib.org/)
-- [NumPy](https://numpy.org/)
-
-### Learning Resources
-- [Kaggle Learn](https://www.kaggle.com/learn)
-- [Google Colab](https://colab.research.google.com/)
-- [Machine Learning Mastery](https://machinelearningmastery.com/)
-- [Towards Data Science](https://towardsdatascience.com/)
-
-### Datasets
-- [Kaggle Datasets](https://www.kaggle.com/datasets)
-- [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/)
-- [Google Dataset Search](https://datasetsearch.research.google.com/)
-
----
-
 ## 📄 License
 
 Educational Use - Machine Learning Projects Collection
-
----
-
-## ✅ Project Completion Checklist
-
-- [ ] Setup Python environment
-- [ ] Install all dependencies
-- [ ] Setup Kaggle API
-- [ ] Download required datasets
-- [ ] Linear Regression ✓
-- [ ] Classification Pipelines ✓
-- [ ] Logistic Regression ✓
-- [ ] Advanced Classification ✓
-- [ ] Clustering Analysis ✓
-- [ ] Neural Network Fundamentals ✓
-- [ ] Transfer Learning (VGG16) ✓
-- [ ] Image Preprocessing & CNN ✓
-- [ ] Random Forest & Ensemble Methods ✓
-- [ ] Advanced CNN ✓
-- [ ] EDA Project ✓
-
----
-
-**Last Updated:** December 2025  
-**Status:** ✓ All projects completed & documented
 
 ---
 
