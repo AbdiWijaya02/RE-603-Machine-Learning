@@ -379,39 +379,3 @@ model.compile(optimizer=Adam(0.001), loss='categorical_crossentropy', metrics=['
 model.fit(train_gen, validation_data=val_gen, epochs=50, 
           callbacks=[EarlyStopping(patience=10)])
 ```
-
-## 📚 Referensi
-
-- [VGG16 Paper](https://arxiv.org/abs/1409.1556)
-- [Transfer Learning Guide](https://www.tensorflow.org/tutorials/images/transfer_learning)
-- [Keras Applications](https://keras.io/api/applications/)
-- [Image Data Augmentation](https://www.tensorflow.org/tutorials/images/data_augmentation)
-- [Kaggle Datasets](https://www.kaggle.com/datasets?search=vehicle)
-
-## ✅ Checklist
-
-- [ ] Download dataset dari Kaggle
-- [ ] Organize folder structure
-- [ ] Install TensorFlow & dependencies
-- [ ] Load & explore dataset
-- [ ] Setup data generators & augmentation
-- [ ] Load VGG16 base model
-- [ ] Build custom model
-- [ ] Compile & define callbacks
-- [ ] Train model
-- [ ] Evaluate performance
-- [ ] Fine-tune (optional)
-- [ ] Save final model
-
----
-
-**Author:** Abdi Wijaya Sasmita (4222201044)  
-**Date:** December 2025  
-**Status:** ✓ Complete
-
-## 🚀 Next Steps
-
-- Experiment dengan fine-tuning
-- Try other architectures (ResNet, EfficientNet)
-- Deploy model sebagai API/web app
-- Optimize untuk mobile/edge devices
